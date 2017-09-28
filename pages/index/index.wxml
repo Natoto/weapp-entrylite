@@ -1,0 +1,101 @@
+<!--index.wxml-->
+
+<import src='budget.wxml' />
+
+<view class="container">
+
+<view class='bluearea'>
+    <view class='flexRowItemCenter' bindtap='togglebudgetap'>
+        <text style='color:#BACEDD'>9月预算余额</text>
+        <image style='width:42rpx;height:42rpx;' src='../../resource/edit2.png' ></image>
+    </view>
+    <view>
+      <text style='color:#B3EB95;font-size:20pt;'>{{budgevalue}}</text>
+    </view>
+
+    <!--日期选择  -->
+    <view style='display:flex;align-items:center;margin-bottom:30rpx;'>
+       <image class='smallicon' src='../../resource/rili.png'></image>
+        <text style='color:#BACEDD;margin-left:10rpx;margin-right:10rpx;'>{{ waterData.month }}</text>
+        <image class='smallicon' src='../../resource/xiangxia.png'></image>      
+    </view>
+
+    <!--收入支出区域  -->
+    <view style='display:flex;align-items:flex-start;justify-content:center;width:100%;'>
+    
+      <view class='shouzhibox'style='border-right:solid 1px #fff;'>   
+           <text class='labeltxt' >收入</text> 
+          <text  class='labeltxt' style='color:#fff'>+{{waterData.income}}</text>     
+      </view>
+
+      <view class='shouzhibox' style='align-items:flex-start'> 
+         <text class='labeltxt labelzhichutxt' >支出</text> 
+          <text class='labeltxt labelzhichutxt' style='color:#fff'>{{waterData.outcome}}</text> 
+      </view>
+    </view>          
+  </view>
+<image style='width:100%;height:40rpx;' src='../../resource/wave.png'></image>
+<!--中部区域  -->
+
+<scroll-view scroll-y style="height: {{scrollheight}}px; width:100%;">
+ 
+      <block wx:for='{{waterData.days}}' wx:key="" wx:key-item='item'>
+          <view class='cell'>
+              <label class='detailtext'>{{item.day}}</label>
+              <view>
+                <label class='detailtext'>收入:{{item.income}}</label>
+                <label class='detailtext'>支出:{{item.outcome}}</label>
+              </view>
+          </view>
+
+          <!--分割线  -->
+          <view style='width:95%;background:#fff;display:flex;justify-content:center;'>
+            <view class='line'></view>
+          </view>
+
+          <!--列表  -->
+          <block >
+            <view class='cell' wx:for='{{item.list}}' wx:for-item='dayitem' wx:key="">      
+              <view class='cellleft'> 
+                  <image class='smallicon' src='../../resource/{{dayitem.typeimg}}'></image>
+                  <label class='nametext' style='margin-left:10rpx;'>{{dayitem.name}}</label>
+                  <label class='detailtext'>-{{dayitem.remark}}</label>
+              </view>
+              <view class='cellright'>
+                  <label class='nametext'>{{dayitem.account}}</label>
+              </view>
+            </view>    
+          </block>
+      </block>
+
+  </scroll-view>
+
+
+
+<view class='stickbottom' style='height:130rpx;'>
+    <view class='stickbottom flexspace' style='bottom:10px'> 
+      <view class='flexcolumncenter' bindtap='gototongji'>
+          <image class='size30' src='../../resource/tongji.png'></image>
+          <label class='fontsize9 lightblue'>统计</label>
+      </view>  
+      
+        <view class='flexcolumncenter' style='margin-bottom:50rpx;' bindtap='gotojizhang'> 
+              <image class='size50 inregularboarder'  src='../../resource/add.png'></image> 
+        </view>
+
+        <view class='flexcolumncenter' bindtap='gotojisuanqi'>
+          <image class='size30' src='../../resource/jisuanqi.png'></image>
+          <label class='fontsize9 lightblue'>计算器</label>
+      </view>  
+    </view>
+    <view style='width:100%;height:10px;margin-bottom:10px;'>
+    </view>
+</view>
+
+
+
+
+
+<template is="budget" data="{{showbudge,budgevalue}}"/>
+ 
+</view>

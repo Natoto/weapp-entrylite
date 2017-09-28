@@ -1,0 +1,20 @@
+ 
+<template name="budget">
+    <view class='alphahalf allsize uplevel' style="display:{{showbudge?'flex':'none'}}">
+      <view class='whitebox raduis10'>
+          <view class='flexright width90p top10' style='margin-left:5%;' >
+            <image class='size30' src='../../resource/close.png' bindtap='togglebudgetap'></image>
+          </view>
+          <view class='flexcenter top10'>
+            <label class='jzgray'>请设置月度预算</label>
+          </view>
+        <view class='flexcenter top50'>
+            <input class='greenfont20' confirm-type='done' type='number' value='{{budgevalue}}' bindconfirm='inputconfirm' bindblur='inputbindblur'></input> 
+        </view>
+          <button class='width90p top50 themebgcolor whitetxt' bindtap='setbudgettap'>完成</button>
+          <view class=' flexcenter  top10'> 
+          <label class='width90p jzgray' style='font-size:9pt;'>提示：每月1日0时，预算将按最后一次设置的额度进行自动设置，如需改变，请手动重新设置</label>
+          </view>
+      </view>
+    </view> 
+  </template>

@@ -1,0 +1,206 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.smallicon{
+  width:42rpx;
+  height: 42rpx;
+}
+.labeltxt{
+  font-size:10pt;
+  color:#BACEDD;
+  text-align: right; 
+  margin-left:20rpx;
+  margin-right: 20rpx;
+}
+
+.detailtext{
+  color: #CFCFCF;
+  text-align: right; 
+  margin-left:20rpx;
+  margin-right: 20rpx;
+  font-size:9pt;
+}
+.labelzhichutxt{
+  text-align: left;
+}
+.nametext{
+  font-size: 10pt;
+  color: #666;
+}
+
+.flexRowItemCenter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.shouzhibox{  
+  
+  flex-direction:column;
+  width:200rpx;
+  align-items:flex-end;
+  justify-content:flex-end;
+   display:flex; 
+   height: 80rpx;
+}
+
+.cell{
+  width:95%;
+  height:100rpx;
+  display:flex;
+  justify-content:space-between;
+  background:#fff;
+  align-items: center;
+  margin-left:2.5%;
+}
+.cellleft{
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.cellright{
+  margin-right: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.line{
+  width: 90%;
+  height: 1rpx;
+  background: #F4F4F4;
+}
+
+.stickbottom{
+  position: absolute;
+  width: 100%;
+  height: 120rpx;
+  background: #DFF1FF;
+  z-index: 2;
+  bottom: 0px;
+}
+.flexspace{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexcolumncenter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 90%;
+}
+.bluearea{
+  width:100%;
+  height:400rpx;
+  background:#5097CE;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column
+}
+
+.fontsize9{
+  font-size: 9pt;
+}
+
+.lightblue{
+  color: #64A4D9
+}
+.bgdarkblue{
+  background: #3679AE;
+}
+.size50{
+  width: 50px;
+  height: 50px;
+}
+.size30{
+  width: 60rpx;
+  height: 60rpx;
+}
+.inregularboarder{
+  border:solid #DFF1FF 10px ;
+  border-radius:35px;
+  overflow:visible;
+}
+.flexright{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.width90p{
+  width: 90%;
+}
+.top10{
+  margin-top: 10px;
+}
+.flexcenter{
+  display: flex;
+  justify-content: center;
+}
+.jzgray{
+  color: #898989
+}
+
+.greenfont20{
+  color:#AFE893;
+  text-align: center;
+  font-size: 20pt;
+}
+
+.alphahalf {
+  /* background:black; */
+  /* opacity:0.8; */
+  background-color:rgba(1,1,1,0.8);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
+
+.whitebox{
+  width:600rpx;
+  height:700rpx;
+  background:#fff; 
+}
+.raduis10{
+  border-radius: 20rpx;
+}
+
+.allsize{
+  width: 100%;
+  height: 100%;
+}
+.themebgcolor{
+  background-color: #5097CE;
+}
+.whitetxt{
+  color: #fff;
+}
+.top50{
+  margin-top: 100rpx;
+}
+
+.uplevel{
+  top: 0px;
+  z-index: 3;
+  position: absolute;
+}

@@ -1,0 +1,79 @@
+/* pages/tongji/tongji.wxss */
+
+
+.bluebetween{
+   background: #5097CE;
+   display: flex;
+   width: 100%;
+   height: 200rpx;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row;
+}
+
+.canvas {
+    width: 100%;
+    height: 200px;
+}
+
+.bluearound{
+   background: #5097CE;
+   display: flex;
+   width: 100%;
+   height: 100rpx;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: row;
+}
+
+.leftcolumn{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+} 
+
+.rightcolumn{
+  display: flex;
+  flex-direction: row;
+  margin-right: 20rpx;
+  align-items: center;
+}
+
+.smallicon{
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.moneynumber{
+   font-size: 20pt;
+   color: lightgreen;
+}
+
+.whitetext{
+  font-size: 10pt;
+  color: #fff;
+}
+
+.whitefont20{
+    font-size: 10pt;
+    color: #fff;
+}
+
+.segmentSelectItem{
+  background-color: #3F81B3;
+  flex:1;
+  border-bottom: solid 2px lightgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.segmentItem{
+  background-color: #5097CE;
+  flex:1; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

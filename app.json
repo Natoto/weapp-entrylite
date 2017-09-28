@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/tongji/tongji",
+    "pages/jizhang/jizhang",
+    "pages/jisuanqi/jisuanqi"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#5097CE",
+    "navigationBarTitleText": "记账Lite",
+    "navigationBarTextStyle":"white"
+  }
+}

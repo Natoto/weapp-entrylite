@@ -1,0 +1,33 @@
+<!--pages/tongji/tongji.wxml-->
+<!-- <text>pages/tongji/tongji.wxml</text> -->
+
+<view class='container'>
+  <view class='bluebetween dotboarder'> 
+      <view class='leftcolumn '>
+         <label class='moneynumber'>643.00</label>
+         <label class='whitetext'>9月份总支出</label>
+      </view> 
+      <view class='rightcolumn' >
+        <picker mode="date" value="{{date}}" start="2016-09" end="2019-09" bindchange="bindDateChange" fields="month">   
+          <image class='smallicon' src='../../resource/xiangxia.png'></image>
+          <label class='whitetext'>{{date}}</label>
+      </picker>
+
+      </view>
+  </view>
+  <view class='bluearound'>
+
+    <view class='segmentSelectItem' >
+        <label class='whitefont20'>支出</label>
+    </view>  
+     <view class='segmentItem' >
+        <label class='whitefont20'>收入</label>
+    </view>  
+
+  </view>
+  <view style='width:100%;height:250px;'>  
+    <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
+  </view>
+
+
+</view>

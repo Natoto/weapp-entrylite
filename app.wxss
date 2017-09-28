@@ -1,0 +1,26 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  box-sizing: border-box;
+  background: #F0F9FF
+} 
+
+Page{
+  width: 100%;
+  height: 100%;
+}
+
+.darkblue{
+  color: #5097CE;
+}
+.lightgreen{
+  color: #B3E995
+}
+
+.dotboarder{ 
+  border-bottom: dotted 1px #fff;
+}

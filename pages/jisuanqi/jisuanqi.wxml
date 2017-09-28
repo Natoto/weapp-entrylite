@@ -1,0 +1,29 @@
+<!--pages/jisuanqi/jisuanqi.wxml--> 
+
+<view class='container' style='background:#007BB9'>
+
+<block>
+  <view class='result-area' style='height:40%;'>
+    <label class='result-area-op'>{{opliststr}}</label>
+    <label class='result-area-op result '>{{result}}</label>
+  </view>
+</block>
+
+<view class='op-area'>
+   <view  class='op-area-left'>
+      <view class='op-area-button' hover-class='op-area-button-hover'  wx:for="{{numbers}}" wx:key="" wx:for-item="item"  data-item="{{item}}"  bindtap='handleTap'>
+         <label>{{item}}</label>
+      </view>
+   </view>
+   <view class='op-area-right'>
+      <view class='op-area-opbutton' hover-class="op-hover"  wx:for="{{oprations}}" wx:key="" wx:for-item="item"   data-item="{{item}}"  bindtap='handleTap'>
+         <label>{{item}}</label>
+      </view>
+      <view class='op-area-opbutton op-equalsbutton' hover-class='equal-hover' data-item="=" bindtap='handleTap' >
+         <label>=</label>
+      </view>
+
+   </view>
+</view>
+
+</view>

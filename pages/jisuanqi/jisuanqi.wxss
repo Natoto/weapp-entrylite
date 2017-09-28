@@ -1,0 +1,80 @@
+/* pages/jisuanqi/jisuanqi.wxss */
+ 
+.result-area{
+    margin:10px;
+    width:90%; 
+    height:200px;
+    border:solid 1px #006097;
+    background:#00669F;
+    border-radius:10rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-area-op{
+  width: 100%;
+  font-size: 20pt;
+  color: white;
+  text-align: right;
+  margin: 10px 10px 10px -10px;
+}
+.result{
+  font-size: 30pt; 
+}
+
+.op-area{
+  width:100%;
+  height:60%;
+  display:flex;
+}
+
+.op-area-left{
+  flex:5; 
+  height:100%;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.op-area-right{
+  flex:2; 
+  height:100%;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+}
+.op-area-button{
+  width: 33%;
+  margin: 0 0 0.3% 0.3%;
+  height: 19.7%;
+  color: #AFC1CE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #003760;
+}
+.op-area-opbutton{
+  width: 100%;
+  margin: 0 0 0.3% 0;
+  height: 19.8%;
+  color: #AFC1CE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #004C7F;
+}
+
+.op-equalsbutton{
+  height: 39.7%;
+  background: #5EA42E;
+}
+
+.op-area-button-hover{
+  background-color: #00466F;
+}
+.op-hover{ 
+  background-color: #054168;
+}
+.equal-hover{ 
+  background-color: #3F6E1F;
+}

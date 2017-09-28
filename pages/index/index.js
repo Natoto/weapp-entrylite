@@ -29,6 +29,15 @@ Page({
 
   }, 
 
+  //点击该行
+  handlecelltap:function(e){
+     console.log(e.currentTarget.dataset.item);
+     ExampleData.TempData.IndexSelectItem = e.currentTarget.dataset.item;   
+     wx.navigateTo({
+       url: '../jizhang/jizhang?iscreate=0',
+     }) 
+  },
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({

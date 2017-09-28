@@ -41,13 +41,13 @@
   <!--金额  -->
   <view class='edit-area-cell'>
     <label class='text-center-title' >金额</label> 
-    <input  class='input-center-value' placeholder='请输入金额' bindinput="bindmoneyinput" value="{{moneyacount}}" type='digit' focus='true'> </input>
+    <input  class='input-center-value' placeholder='请输入金额' bindinput="bindmoneyinput" value="{{moneyaccount}}" type='digit' focus='true'> </input>
   </view>
 
   <!--备注  -->
   <view class='edit-area-cell'>
     <label class='text-center-title' >备注</label> 
-    <input  class='input-center-value' placeholder='备注内容' bindinput="bindremarkinput" > </input>
+    <input  class='input-center-value' placeholder='备注内容' bindinput="bindremarkinput"  value="{{remark}}"> </input>
   </view>
 
 </view>
@@ -55,7 +55,7 @@
 <view class='option-area' >
 
   <button class='button-op done' bindtap='handleDoneTap' disabled="{{moneyaccount==0?true:false}}">完成</button>
-  <button class='button-op again' hover-class="button-hover" wx:if='{{iscreate}}' disabled="{{moneyaccount==0?true:false}}">再记一笔</button>
-  <button class='button-op delete' wx:else> 删除</button>
+  <button class='button-op again' hover-class="button-hover" wx:if='{{iscreate}}' disabled="{{moneyaccount==0?true:false}}" bindtap='handleAgainTap'>再记一笔</button>
+  <button class='button-op delete' wx:else  bindtap='handleDeleteTap'> 删除</button>
 </view>
 </view>

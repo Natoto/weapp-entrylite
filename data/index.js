@@ -1,4 +1,12 @@
 
+export var TempData = {
+  IndexSelectItem: {},
+  property2: "something else",
+  method1: function () {
+    console.log('hello world');
+  }
+};
+
  
 function readData(monthkey){
   console.log(monthkey);
@@ -18,6 +26,7 @@ export const data = {
             outcome:-10.33,
             list:[
               {
+                recordid:1341235225,
                 date: "2017-09-21",
                 type: 1,//记账类型          
                 name: "奖金",
@@ -27,6 +36,7 @@ export const data = {
                 typeimg: "jiangjin.png"
               },
               {
+                recordid: 1341235225,
                 date: "2017-09-21",
                 type: 2,//记账类型          
                 name: "购物消费",
